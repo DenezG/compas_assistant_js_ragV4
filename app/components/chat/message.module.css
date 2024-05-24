@@ -1,0 +1,79 @@
+  .icon{
+    width: auto; /* ajustez selon vos besoins */
+    height: 30px; /* assurez-vous que le logo conserve son aspect ratio */
+    margin-right: 0px; /* espace entre les logos */
+    border-radius: 5%;
+  }
+  
+  .userMessage,
+  .assistantMessage,
+  .codeMessage,
+  .userIcon {
+    margin: 8px 0;
+    padding: 8px 16px;
+    align-self: flex-start;
+    border-radius: 15px;
+    max-width: 80%;
+    color: #000;
+  }
+  
+  .userContainer{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; 
+  }
+  
+  .userMessage {
+    align-self: flex-end;
+    background-color: rgba(225, 206, 64, 0.7);
+    padding: 10px;
+  }
+  
+  .userIcon{
+    align-self: flex-end;
+    background-color: rgba(225, 206, 64, 0.7); /* jaune clair transparent */
+    border-radius: 50%; /* Arrondi */
+    padding: 8px; /* Espace autour de l'icône */
+    margin-bottom: 0px; /* Réduire l'espace entre le message et l'icône */
+  }
+  
+  /*Styles pour le bot*/
+  .assistantContainer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; 
+  }
+  
+  .assistantIcon{
+    align-self: flex-start;
+    background-color: rgba(0, 128, 255, 0.5); /* Bleu clair transparent */
+    border-radius: 50%; /* Arrondi */
+    border-radius: 50%; /* Arrondi */
+    padding: 8px; /* Espace autour de l'icône */
+    margin-bottom: 0px; /* Réduire l'espace entre le message et l'icône */
+  }
+  
+  .assistantMessage {
+    background-color: rgba(0, 128, 255, 0.5); /* Bleu clair transparent */
+    color: #000;
+    padding: 10px;
+  }
+  
+  
+  
+  .codeMessage {
+    padding: 10px 16px;
+    background-color: #232222c8;
+    font-family: monospace;
+    counter-reset: line;
+    color:#efe7e7
+  }
+  
+  .codeMessage > div {
+    margin-top: 4px;
+  }
+  
+  .codeMessage span {
+    color: #bbb9b9;
+    margin-right: 8px;
+  }

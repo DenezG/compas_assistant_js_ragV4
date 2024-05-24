@@ -1,0 +1,17 @@
+.question{
+    border-radius: 0.375rem;
+    background-color: rgb(12 74 110);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem; /* Ajout de marge à droite pour créer de l'écart entre les questions */
+    max-width: 250px;
+    color: white;
+    cursor: pointer;
+}
+
+.questionsContainer{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content: space-around;
+}
