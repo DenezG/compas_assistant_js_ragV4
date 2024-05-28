@@ -168,7 +168,7 @@ const Chat = ({
   };
 
   const handleImageFileDone = async (content: any, snapshot: any) => {
-    //console.log("handleImageFileDone", content, snapshot);
+    console.log("handleImageFileDone", content, snapshot);
     const response = await fetch(`/api/assistants/image/`, {
       method: "POST",
       headers: {
