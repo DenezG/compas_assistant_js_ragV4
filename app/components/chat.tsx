@@ -7,11 +7,9 @@ import { AssistantStream } from "openai/lib/AssistantStream";
 import { AssistantStreamEvent } from "openai/resources/beta/assistants/assistants";
 import { RequiredActionFunctionToolCall } from "openai/resources/beta/threads/runs/runs";
 import Message from "./chat/message";
-import Image from "next/image";
-import loader from "../../datas/loader.gif"
 import Question from "./chat/question";
 import FormChat from "./chat/formChat";
-import cancelIcon from "../../datas/cancel.svg"
+import Loader from "./chat/loader";
 
 
 
@@ -224,6 +222,7 @@ const Chat = ({
     setMessages((prevMessages) => [...prevMessages, { role, text }]);
   };
 
+  /**NextQuestions */
   const [nextQuestions,setNextQuestions] = useState<string[]>([]);;
   return (
     <div className={styles.chatContainer}>
@@ -233,9 +232,7 @@ const Chat = ({
         ))}
         {/*Affiche un loader lorsque l'assistant est en train d'écrire/chercher des données*/}
         {inputDisabled && <div  className={styles.loaderContainer}>
-                        <div className={styles.loaderIcon}>
-                            <Image src={loader} alt="Load Logo" className={styles.loader}/>
-                        </div>
+                        <Loader/>
                     </div>
         }
         <div ref={messagesEndRef} />
@@ -265,15 +262,8 @@ const Chat = ({
               }
               
       
-      <FormChat handleSubmit={handleSubmit} userInput={userInput} setUserInput={setUserInput} inputDisabled={inputDisabled}/>
-      <form onSubmit={handleCancel}>
-      <button
-        className={styles.button}
-        >
-          <Image src={cancelIcon} alt="cancelIcon"/>
-        </button>
-        
-      </form>
+      <FormChat handleSubmit={handleSubmit} userInput={userInput} setUserInput={setUserInput} inputDisabled={inputDisabled} handleCancel={handleCancel}/>
+      
     </div>
   );
 };

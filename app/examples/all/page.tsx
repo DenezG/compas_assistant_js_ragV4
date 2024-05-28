@@ -21,7 +21,8 @@ const FunctionCalling = () => {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.column}>
-        {imageUrl && <img src={imageUrl} alt="assistant image" />}          <FileViewer />
+          {imageUrl && <img src={imageUrl} alt="assistant image" />}
+          <FileViewer />
         </div>
         <div className={styles.chatContainer}>
           <div className={styles.chat}>
