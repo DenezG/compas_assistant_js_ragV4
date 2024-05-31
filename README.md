@@ -1,5 +1,5 @@
 # Compas Assistant
-Template de OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs).
+Template de Compas Assistant: https://github.com/DenezG/compas-assistant.git
 <br/>
 <br/>
 
