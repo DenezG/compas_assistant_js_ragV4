@@ -8,7 +8,7 @@ Template de OpenAI [Assistants API](https://platform.openai.com/docs/assistants/
 
 ### 1. Clone repo
 ```shell
-git clone https://github.com/DenezG/compas-assistant-rag.git
+git clone https://github.com/DenezG/compas_assistant_js_ragV4.git
 cd compas-assistant-rag
 ```
 
