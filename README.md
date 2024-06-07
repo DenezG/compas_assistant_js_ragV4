@@ -16,8 +16,6 @@ cd compas_assistant_js_ragV4
 ```shell
 OPENAI_API_KEY = 'sk-proj-...'
 ASSISTANT_ID = 'asst_...'
-DEWY_ENDPOINT= 'http://localhost:8000'
-DEWY_COLLECTION= 'main'
 ```
 (Dans un fichier `.env.local` que vous devez créer).
 
