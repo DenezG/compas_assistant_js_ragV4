@@ -28,7 +28,7 @@ export default function FormChat(props : Props) {
           <span onClick={props.handleCancel}
           className={styles.span}
           >
-            <Image src={cancelIcon} alt="cancelIcon"/>
+            <Image src={cancelIcon} alt="cancelIcon" className={styles.cancel}/>
             Cancel
           </span>
           :
