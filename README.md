@@ -1,5 +1,5 @@
 # Compas Assistant
-Template de OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs).
+Template de Compas Assistant: https://github.com/DenezG/compas-assistant.git
 <br/>
 <br/>
 
@@ -8,16 +8,15 @@ Template de OpenAI [Assistants API](https://platform.openai.com/docs/assistants/
 
 ### 1. Clone repo
 ```shell
-git clone https://github.com/DenezG/compas-assistant-rag.git
-cd compas-assistant-rag
+git clone https://github.com/DenezG/compas_assistant_js_ragV4.git
+cd compas_assistant_js_ragV4
 ```
 
-### 2. Configurer votre [OpenAI API key](https://platform.openai.com/api-keys)
+### 2. Configurer votre [OpenAI API key](https://platform.openai.com/api-keys) et votre [Unstructured API key](https://unstructured.io/api-key-free)
 ```shell
 OPENAI_API_KEY = 'sk-proj-...'
 ASSISTANT_ID = 'asst_...'
-DEWY_ENDPOINT= 'http://localhost:8000'
-DEWY_COLLECTION= 'main'
+UNSTRUCTURED_API_KEY = '...' 
 ```
 (Dans un fichier `.env.local` que vous devez créer).
 
@@ -31,7 +30,9 @@ npm install
 npm run dev
 ```
 
-### 5. Naviger à [http://localhost:3000](http://localhost:3000).
+### 5. Ajouter des fichiers xls dans datas/COMPAS
+
+### 6. Naviger à [http://localhost:3000](http://localhost:3000).
 
 ## Overview
 
