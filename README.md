@@ -12,10 +12,11 @@ git clone https://github.com/DenezG/compas_assistant_js_ragV4.git
 cd compas_assistant_js_ragV4
 ```
 
-### 2. Configurer votre [OpenAI API key](https://platform.openai.com/api-keys)
+### 2. Configurer votre [OpenAI API key](https://platform.openai.com/api-keys) et votre [Unstructured API key](https://unstructured.io/api-key-free)
 ```shell
 OPENAI_API_KEY = 'sk-proj-...'
 ASSISTANT_ID = 'asst_...'
+UNSTRUCTURED_API_KEY = '...' 
 ```
 (Dans un fichier `.env.local` que vous devez créer).
 
