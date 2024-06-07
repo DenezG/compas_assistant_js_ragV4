@@ -29,7 +29,9 @@ npm install
 npm run dev
 ```
 
-### 5. Naviger à [http://localhost:3000](http://localhost:3000).
+### 5. Ajouter des fichiers xls dans datas/COMPAS
+
+### 6. Naviger à [http://localhost:3000](http://localhost:3000).
 
 ## Overview
 
